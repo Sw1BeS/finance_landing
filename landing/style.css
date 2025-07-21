@@ -1,0 +1,160 @@
+:root {
+  --dark-blue: #0F1C3F;
+  --bright-blue: #3A7BD5;
+  --light-blue: #A3C4F3;
+  --text-dark: #333;
+  --text-light: #fff;
+}
+
+body {
+  margin: 0;
+  font-family: 'Open Sans', Arial, sans-serif;
+  color: var(--text-dark);
+  scroll-behavior: smooth;
+}
+
+header {
+  background-color: var(--dark-blue);
+  color: var(--text-light);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav li {
+  margin-left: 1.5rem;
+}
+
+nav a {
+  color: var(--text-light);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+#connectWalletButton {
+  background-color: var(--bright-blue);
+  border: none;
+  color: var(--text-light);
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+section {
+  padding: 5rem 2rem;
+}
+
+.hero {
+  background-color: var(--light-blue);
+  padding-top: 8rem;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.hero .btn {
+  background-color: var(--bright-blue);
+  color: var(--text-light);
+  padding: 0.75rem 2rem;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.features {
+  background-color: var(--light-blue);
+  text-align: center;
+}
+
+.features .grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.features .card {
+  background-color: var(--text-light);
+  padding: 1.5rem;
+  border-radius: 8px;
+  flex: 1 1 220px;
+}
+
+.steps {
+  text-align: center;
+}
+
+.steps .step {
+  margin-bottom: 1.5rem;
+}
+
+.team .grid,
+.stats .grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.team .member {
+  text-align: center;
+  flex: 1 1 200px;
+}
+
+.team img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.stats .stat {
+  text-align: center;
+  flex: 1 1 150px;
+  font-size: 1.5rem;
+  color: var(--bright-blue);
+}
+
+.contact {
+  background-color: var(--light-blue);
+  text-align: center;
+}
+
+footer {
+  background-color: var(--dark-blue);
+  color: var(--text-light);
+  text-align: center;
+  padding: 1rem 0;
+}
+
+@media (max-width: 600px) {
+  nav li {
+    margin-left: 1rem;
+  }
+  .hero h1 {
+    font-size: 1.5rem;
+  }
+}
